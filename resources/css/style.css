@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #004156;
+    height: 100%;
+    overflow: auto;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    background-image: linear-gradient(to right, #D7803B, #004156);
+    align-items: center;
+    /* border: solid white 1px; */
+}
+
+.navbar .lakesideName {
+    color: #004156;
+    margin-left: 35px;
+}
+
+.navLinks {
+        display: flex;
+        list-style: none;
+        width: 30%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navLinks li a:hover {
+    color: white;
+    transition: all 500ms;
+}
+
+.mainPage {
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.lakeside {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lakeside img:hover {
+    transform: scale(1.3);
+    transition: all 300ms;
+}
