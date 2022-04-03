@@ -12,9 +12,8 @@
 
 
 
-        mail($mailTO, $subject, $txt, $headers);
-
-        header("Location: contactForm.php?mailsent");
+        @mail($mailTO, $subject, $txt, $headers);
+        
     }
 
 ?>
